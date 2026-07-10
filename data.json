@@ -763,17 +763,12 @@
       "Makine Öğrenmesi",
       "Yapay Zeka",
       "Veri Yapıları",
-      "Bitirme Tezi",
       "Bilgisayar Programlama",
       "Bilgisayar Mimarisi"
     ],
     "graduate": [
       "İleri Derin Öğrenme Uygulamaları",
-      "Makine Öğrenmesi",
-      "Uzmanlık Alan Dersi",
-      "Yüksek Lisans Tez Çalışması",
-      "Yüksek Lisans Semineri",
-      "Yüksek Lisans Tez Hazırlık"
+      "Makine Öğrenmesi"
     ]
   }
 }
