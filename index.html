@@ -251,13 +251,13 @@ const T={
     conferences_intl:'Uluslararası Bildiriler',conferences_natl:'Ulusal Bildiriler',book_chapters:'Kitap Bölümleri',
     projects:'Projeler',theses:'Yönetilen Tezler',awards:'Ödüller',teaching:'Verdiği Dersler',
     undergrad:'Lisans',grad:'Yüksek Lisans',all:'Tümü',role:'Görev',funder:'Destekleyen',
-    s_pub:'Yayın',s_proj:'Proje',s_thesis:'Tez',s_cite:'Yıl Deneyim',stat_exp:'Yıl'},
+    s_pub:'Yayın',s_proj:'Proje',s_thesis:'Tez',s_cite:'Yıl Deneyim',stat_exp:'Yıl',field:'Bilgisayar Mühendisliği'},
   en:{about:'About',education:'Education',positions:'Academic Positions',admin:'Administrative Roles',
     publications:'Publications',journals_intl:'International Journals',journals_natl:'National Journals',
     conferences_intl:'International Conferences',conferences_natl:'National Conferences',book_chapters:'Book Chapters',
     projects:'Projects',theses:'Supervised Theses',awards:'Awards',teaching:'Courses Taught',
     undergrad:'Undergraduate',grad:'Graduate',all:'All',role:'Role',funder:'Funder',
-    s_pub:'Publications',s_proj:'Projects',s_thesis:'Theses',s_cite:'Years',stat_exp:'Years'}
+    s_pub:'Publications',s_proj:'Projects',s_thesis:'Theses',s_cite:'Years',stat_exp:'Years',field:'Computer Engineering'}
 };
 
 function loc(v){ if(v==null) return ''; if(typeof v==='object') return v[LANG]||v.tr||v.en||''; return v; }
@@ -283,7 +283,7 @@ function render(){
   /* HERO */
   h+=`<section class="hero"><div class="wrap"><div class="hero-grid">
     <div>
-      <div class="eyebrow">${esc(loc(p.title))} · Computer Engineering</div>
+      <div class="eyebrow">${esc(loc(p.title))} · ${t.field}</div>
       <h1>${esc(p.name)}</h1>
       <div class="role">${esc(loc(p.title))}</div>
       <div class="dept">${esc(loc(p.department))}</div>
