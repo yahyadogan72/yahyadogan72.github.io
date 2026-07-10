@@ -1,0 +1,779 @@
+{
+  "profile": {
+    "name": "Yahya Doğan",
+    "title": {
+      "tr": "Doçent",
+      "en": "Associate Professor"
+    },
+    "department": {
+      "tr": "Siirt Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "en": "Siirt University, Faculty of Engineering, Department of Computer Engineering"
+    },
+    "email": "yahyadogan@siirt.edu.tr",
+    "phone": "(0484) 223-1224 / 3014",
+    "photo": "assets/profile.jpg",
+    "bio": {
+      "tr": "Bilgisayar Mühendisliği alanında doçent. Araştırma ilgi alanları derin öğrenme, bilgisayarlı görü, tıbbi görüntü analizi, üretken çekişmeli ağlar ve makine öğrenmesidir.",
+      "en": "Associate Professor in Computer Engineering. Research interests include deep learning, computer vision, medical image analysis, generative adversarial networks, and machine learning."
+    },
+    "links": {
+      "scholar": "",
+      "orcid": "",
+      "researchgate": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  "education": [
+    {
+      "degree": {
+        "tr": "Doktora",
+        "en": "Ph.D."
+      },
+      "institution": "Ankara Üniversitesi, Fen Bilimleri Enstitüsü, Bilgisayar Mühendisliği",
+      "years": "2016 – 2021",
+      "thesis": {
+        "tr": "Tez: Üretken çekişmeli ağlarda gizli unsur kodlayıcı ile çıktı imgesi arasındaki ilişkinin hesaplamalı modellenmesi (2021). Danışman: Hacer Yalım Keleş.",
+        "en": "Thesis: Computational modeling of the relationship between the latent encoder and the output image in generative adversarial networks (2021). Advisor: Hacer Yalım Keleş."
+      }
+    },
+    {
+      "degree": {
+        "tr": "Yüksek Lisans",
+        "en": "M.Sc."
+      },
+      "institution": "Fırat Üniversitesi, Fen Bilimleri Enstitüsü, Bilgisayar Mühendisliği (Tezli)",
+      "years": "2014 – 2016",
+      "thesis": {
+        "tr": "Tez: Endüstriyel kameralar için hiperspektral bantlarda adaptif pozlama süresi kestirimi (2016). Danışman: Ahmet Çınar.",
+        "en": "Thesis: Estimation of adaptive exposure time in hyperspectral bands for industrial cameras (2016). Advisor: Ahmet Çınar."
+      }
+    },
+    {
+      "degree": {
+        "tr": "Lisans (Çift Anadal)",
+        "en": "B.Sc. (Double Major)"
+      },
+      "institution": "Sakarya Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği",
+      "years": "2007 – 2012",
+      "thesis": {
+        "tr": "",
+        "en": ""
+      }
+    },
+    {
+      "degree": {
+        "tr": "Lisans",
+        "en": "B.Sc."
+      },
+      "institution": "Sakarya Üniversitesi, Mühendislik Fakültesi, Endüstri Mühendisliği",
+      "years": "2007 – 2011",
+      "thesis": {
+        "tr": "",
+        "en": ""
+      }
+    }
+  ],
+  "positions": [
+    {
+      "role": {
+        "tr": "Doçent",
+        "en": "Associate Professor"
+      },
+      "institution": "Siirt Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2024 – "
+    },
+    {
+      "role": {
+        "tr": "Doktor Öğretim Üyesi",
+        "en": "Assistant Professor"
+      },
+      "institution": "Siirt Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2022 – 2024"
+    },
+    {
+      "role": {
+        "tr": "Araştırma Görevlisi",
+        "en": "Research Assistant"
+      },
+      "institution": "Siirt Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2021 – 2022"
+    },
+    {
+      "role": {
+        "tr": "Araştırma Görevlisi",
+        "en": "Research Assistant"
+      },
+      "institution": "Ankara Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2017 – 2021"
+    },
+    {
+      "role": {
+        "tr": "Araştırma Görevlisi",
+        "en": "Research Assistant"
+      },
+      "institution": "Siirt Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2012 – 2017"
+    }
+  ],
+  "administrative": [
+    {
+      "role": {
+        "tr": "Enstitü Yönetim Kurulu Üyeliği",
+        "en": "Institute Executive Board Member"
+      },
+      "institution": "Siirt Üniversitesi, Fen Bilimleri Enstitüsü",
+      "years": "2025 – "
+    },
+    {
+      "role": {
+        "tr": "Fakülte Kurulu Üyeliği",
+        "en": "Faculty Council Member"
+      },
+      "institution": "Siirt Üniversitesi, Mühendislik Fakültesi",
+      "years": "2024 – "
+    },
+    {
+      "role": {
+        "tr": "Anabilim Dalı Başkanı",
+        "en": "Head of Division"
+      },
+      "institution": "Siirt Üniversitesi, Bilgisayar Mühendisliği (YL)",
+      "years": "2024 – "
+    },
+    {
+      "role": {
+        "tr": "Bölüm Başkanı",
+        "en": "Head of Department"
+      },
+      "institution": "Siirt Üniversitesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2024 – "
+    },
+    {
+      "role": {
+        "tr": "Bölüm Başkan Yardımcısı",
+        "en": "Deputy Head of Department"
+      },
+      "institution": "Siirt Üniversitesi, Bilgisayar Mühendisliği Bölümü",
+      "years": "2022 – 2024"
+    }
+  ],
+  "awards": [
+    {
+      "title": {
+        "tr": "Mansiyon Ödülü",
+        "en": "Honorable Mention Award"
+      },
+      "org": "Harran Üniversitesi",
+      "year": "2017"
+    },
+    {
+      "title": {
+        "tr": "En İyi Bildiri Ödülü",
+        "en": "Best Paper Award"
+      },
+      "org": "İnönü Üniversitesi",
+      "year": "2016"
+    }
+  ],
+  "publications": {
+    "journals_intl": [
+      {
+        "authors": "Kılıç Ş., Doğan Y.",
+        "year": "2026",
+        "title": "A pruned and parameter-efficient Xception framework for skin cancer classification",
+        "venue": "PLOS One, 21(3)",
+        "doi": "10.1371/journal.pone.0341227"
+      },
+      {
+        "authors": "Tekin H., Kılıç Ş., Doğan Y.",
+        "year": "2025",
+        "title": "DiagNeXt: A Two-Stage Attention-Guided ConvNeXt Framework for Kidney Pathology Segmentation and Classification",
+        "venue": "Journal of Imaging, 11(12)",
+        "doi": "10.3390/jimaging11120433"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2025",
+        "title": "LbpRIPooling: A novel rotation-invariant pooling method for CNNs",
+        "venue": "Knowledge-Based Systems, 328",
+        "doi": "10.1016/j.knosys.2025.114204"
+      },
+      {
+        "authors": "Alasulu A., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Tıbbi BT Görüntülerinde Derin Öğrenme Tabanlı Sınıflandırma Modellerinin Etkinlik Değerlendirmesi: EfficientNet-v2_L'nin Üstün Performansı",
+        "venue": "Uluslararası İleri Doğa Bilimleri ve Mühendislik Araştırmaları Dergisi, 9(9), 94-100",
+        "doi": ""
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2025",
+        "title": "AutoEffFusionNet: A New Approach for Cervical Cancer Diagnosis Using ResNet-Based Autoencoder With Attention Mechanism and Genetic Feature Selection",
+        "venue": "IEEE Access, 13, 44107-44122",
+        "doi": "10.1109/ACCESS.2025.3543850"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2025",
+        "title": "A novel pruning-enhanced hybrid approach for efficient and accurate brain tumor diagnosis",
+        "venue": "Biomedical Signal Processing and Control, 112",
+        "doi": "10.1016/j.bspc.2025.108466"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2024",
+        "title": "An innovative approach for parkinson's disease diagnosis using CNN, NCA, and SVM",
+        "venue": "Neural Computing and Applications, 36, 20089-20110",
+        "doi": "10.1007/s00521-024-10299-8"
+      },
+      {
+        "authors": "Doğan Y., Özdemir C., Kaya Y.",
+        "year": "2024",
+        "title": "Enhancing CNN model classification performance through RGB angle rotation method",
+        "venue": "Neural Computing and Applications, 36, 20259-20276",
+        "doi": "10.1007/s00521-024-10232-z"
+      },
+      {
+        "authors": "Özdemir C., Doğan Y.",
+        "year": "2024",
+        "title": "Advancing early diagnosis of Alzheimer's disease with next-generation deep learning methods",
+        "venue": "Biomedical Signal Processing and Control, 96(1), 1-10",
+        "doi": "10.1016/j.bspc.2024.106614"
+      },
+      {
+        "authors": "Özdemir C., Doğan Y.",
+        "year": "2024",
+        "title": "Advancing brain tumor classification through MTAP model: an innovative approach in medical diagnostics",
+        "venue": "Medical & Biological Engineering & Computing, 62, 2165-2176",
+        "doi": "10.1007/s11517-024-03064-5"
+      },
+      {
+        "authors": "Özdemir C., Doğan Y., Kaya Y.",
+        "year": "2024",
+        "title": "RGB-Angle-Wheel: A new data augmentation method for deep learning models",
+        "venue": "Knowledge-Based Systems, 291(111615), 1-10",
+        "doi": "10.1016/j.knosys.2024.111615"
+      },
+      {
+        "authors": "Özdemir C., Doğan Y., Kaya Y.",
+        "year": "2023",
+        "title": "A new local pooling approach for convolutional neural network: local binary pattern",
+        "venue": "Multimedia Tools and Applications, 83, 34137-34151",
+        "doi": "10.1007/s11042-023-17540-x"
+      },
+      {
+        "authors": "Doğan Y., Kılıç Ş.",
+        "year": "2023",
+        "title": "Deep Learning Based Gender Identification Using Ear Images",
+        "venue": "Traitement du Signal, 40(4), 1626-1639",
+        "doi": "10.18280/ts.400431"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2023",
+        "title": "A New Global Pooling Method for Deep Neural Networks: Global Average of Top-K Max-Pooling",
+        "venue": "Traitement du Signal, 40(2), 577-587",
+        "doi": "10.18280/ts.400216"
+      },
+      {
+        "authors": "Doğan Y., Yalım Keleş H.",
+        "year": "2022",
+        "title": "Iterative facial image inpainting based on an encoder-generator architecture",
+        "venue": "Neural Computing and Applications, 34, 10001-10021",
+        "doi": "10.1007/s00521-022-06987-y"
+      },
+      {
+        "authors": "Doğan Y., Yalım Keleş H.",
+        "year": "2020",
+        "title": "Semi-supervised image attribute editing using generative adversarial networks",
+        "venue": "Neurocomputing, 401, 338-352",
+        "doi": "10.1016/j.neucom.2020.03.071"
+      },
+      {
+        "authors": "Doğan Y., Çınar A., Özbay E.",
+        "year": "2017",
+        "title": "Correction of real-time exposure in hyperspectral bands for industrial cameras",
+        "venue": "International Journal of Computer Science and Mobile Computing, 6(10), 1-10",
+        "doi": ""
+      },
+      {
+        "authors": "Ataş M., Doğan Y., Ataş İ.",
+        "year": "2016",
+        "title": "Fast Weighing of Pistachio Nuts by Vibration Sensor Array",
+        "venue": "International Journal of Electronics and Electrical Engineering, 4(4), 313-317",
+        "doi": "10.18178/ijeee.4.4.313-317"
+      }
+    ],
+    "journals_natl": [
+      {
+        "authors": "Ataş M. S., Doğan Y., Özdemir C.",
+        "year": "2024",
+        "title": "Performance Comparison of Deep Learning Lane Detection Models for Autonomous Vehicles",
+        "venue": "Çukurova Üniversitesi Mühendislik Fakültesi Dergisi, 39(4), 861-872",
+        "doi": "10.21605/cukurovaumfd.1605865"
+      },
+      {
+        "authors": "Doğan Y., Özdemir C.",
+        "year": "2024",
+        "title": "Enhancing Skin Cancer Diagnosis through the Integration of Deep Learning and Machine Learning Approaches",
+        "venue": "Bilişim Teknolojileri Dergisi, 17(4), 339-347",
+        "doi": "10.17671/gazibtd.1484037"
+      },
+      {
+        "authors": "Öter E., Doğan Y.",
+        "year": "2024",
+        "title": "A Comparative Study on Data Balancing Methods for Alzheimer's Disease Classification",
+        "venue": "Çukurova Üniversitesi Mühendislik Fakültesi Dergisi, 39(2), 489-501",
+        "doi": "10.21605/cukurovaumfd.1514553"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2024",
+        "title": "Which pooling method is better: Max, Avg, or Concat (Max, Avg)",
+        "venue": "Communications Faculty of Sciences University of Ankara Series A2-A3, 66(1), 95-117",
+        "doi": "10.33769/aupse.1356138"
+      },
+      {
+        "authors": "Ataş İ., Özdemir C., Ataş M., Doğan Y.",
+        "year": "2023",
+        "title": "Forensic Dental Age Estimation Using Modified Deep Learning Neural Network",
+        "venue": "Balkan Journal of Electrical and Computer Engineering, 11(4), 298-305",
+        "doi": "10.17694/bajece.1351546"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2023",
+        "title": "Derin Öğrenme Yöntemleriyle Çapraz Veri Seti Değerlendirmesi Altında COVID-19 Tespiti",
+        "venue": "Gazi Üniversitesi Fen Bilimleri Dergisi Part C, 11(3), 813-823",
+        "doi": "10.29109/gujsc.1210343"
+      }
+    ],
+    "conferences_intl": [
+      {
+        "authors": "Doğan Y., Özdemir C., Ataş M.",
+        "year": "2022",
+        "title": "Skin Lesion Classification Using Deep Learning Methods: CNN, Mlp-Mixer And ViT",
+        "venue": "III. International Siirt Scientific Research Congress"
+      },
+      {
+        "authors": "Demir D., Özdemir C., Doğan Y.",
+        "year": "2025",
+        "title": "Atık Türlerinin Sınıflandırılmasında Evrişimli Sinir Ağları ve Yeni Nesil Mimarilerin Karşılaştırmalı Analizi",
+        "venue": "5th International Conference on Modern and Advanced Research"
+      },
+      {
+        "authors": "Ertaş Ö., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Orman Yangını Tespitinde Derin Öğrenme Modellerinin Karşılaştırmalı Analizi",
+        "venue": "5th International Conference on Modern and Advanced Research"
+      },
+      {
+        "authors": "Çiftçi M., Doğan Y., Özdemir C.",
+        "year": "2026",
+        "title": "Yemek Sınıflandırma Probleminde Modern Derin Öğrenme Mimarilerinin Etkinliğinin İncelenmesi",
+        "venue": "4th International Conference on Pioneer and Academic Research"
+      },
+      {
+        "authors": "Tekin H., Doğan Y., Özdemir C.",
+        "year": "2026",
+        "title": "Comparative and Explainable Analysis of Machine Learning and Deep Learning Models in Predicting Student Academic Success",
+        "venue": "3. Bilsel International Safranbolu Scientific Congress"
+      },
+      {
+        "authors": "Ertaş Ö., Doğan Y., Özdemir C.",
+        "year": "2026",
+        "title": "Makine Öğrenmesi Yöntemleri ile Diyabet Hastalığının Teşhisi",
+        "venue": "6th International Conference on Recent Academic Studies"
+      },
+      {
+        "authors": "Acabey Ş. N., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Kalp Krizi Risk Tahmininde Çoklu Makine Öğrenmesi Modellerinin Karşılaştırmalı Performans ve Açıklanabilirlik Analizi",
+        "venue": "7th International Conference on Scientific and Academic Research"
+      },
+      {
+        "authors": "Güneş M., Özdemir C., Doğan Y.",
+        "year": "2025",
+        "title": "Solunum Yolu Enfeksiyonlarının Makine Öğrenmesi Yöntemleri ile Sınıflandırılması: Karşılaştırmalı Performans Analizi",
+        "venue": "6th International Conference on Frontiers in Academic Research, 338-347"
+      },
+      {
+        "authors": "Evin İ., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Ateşli Hastalıklarda İlaç Seçimi İçin Makine Öğrenimi Tabanlı Karar Destek Sistemi ve Açıklanabilir Yapay Zeka Yaklaşımı",
+        "venue": "6th International Conference on Frontiers in Academic Research, 670-677"
+      },
+      {
+        "authors": "Demir D., Özdemir C., Doğan Y.",
+        "year": "2025",
+        "title": "Makine Öğrenmesi Modelleri ile Hastalık Sınıflandırması: Çoklu Model Karşılaştırması",
+        "venue": "6th International Conference on Frontiers in Academic Research, 135-140"
+      },
+      {
+        "authors": "Kaya M. Y., Özdemir C., Doğan Y.",
+        "year": "2025",
+        "title": "Elektrikli Araç Telemetri Verilerinin Makine Öğrenmesi Yöntemleri ile Sınıflandırılması",
+        "venue": "6th International Conference on Frontiers in Academic Research, 168-177"
+      },
+      {
+        "authors": "Alasulu A., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Semptom Verilerine Dayalı Çok Sınıflı Hastalık Tanısında Makine Öğrenmesi Yaklaşımlarının Deneysel Analizi",
+        "venue": "6th International Conference on Scientific and Innovative Studies, 309-316"
+      },
+      {
+        "authors": "Ayaz S., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "Makine Öğrenmesi Yöntemleri ile Kalp Hastalığı Tahmini",
+        "venue": "6th International Conference on Scientific and Innovative Studies, 449-455"
+      },
+      {
+        "authors": "Öter E., Doğan Y.",
+        "year": "2025",
+        "title": "Alzheimer Teşhisinde Veri Dengeleme Yöntemlerinin Performans Analizi ve Değerlendirilmesi",
+        "venue": "7th International Conference on Engineering and Applied Natural Sciences (ICEANS 2025), 463-468"
+      },
+      {
+        "authors": "Buğday İ., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "CNN Tabanlı Derin Öğrenme Modellerinin Artırılmış Oral Hastalık Görüntüleri Üzerinde Karşılaştırmalı Performans Analizi",
+        "venue": "5th International Conference on Trends in Advanced Research, 133-140"
+      },
+      {
+        "authors": "Ayaz S., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "CBAM Destekli Derin Öğrenme Modelleri ile Ağız Hastalıklarının Sınıflandırılması",
+        "venue": "2nd International Conference on Pioneer and Academic Research, 258-263"
+      },
+      {
+        "authors": "Aşar T., Doğan Y., Özdemir C.",
+        "year": "2025",
+        "title": "EfficientNet-B0 Mimarisine SE Dikkat Modülü Entegrasyonu ve ResNet101 Modellerinin Ensemble Yaklaşımı ile BreaKHis 400X Veri Seti Üzerinde Hücre Sınıflandırma",
+        "venue": "2nd International Conference on Pioneer and Academic Research, 206-211"
+      },
+      {
+        "authors": "Doğan Y., Özdemir C.",
+        "year": "2024",
+        "title": "Türkçe İçerikli Videolarda YouTube ve Whisper Modellerinin Otomatik Konuşma Tanıma Performanslarının İncelenmesi",
+        "venue": "3rd International Conference on Recent Academic Studies, 293-300"
+      },
+      {
+        "authors": "Beytekin Y., Doğan Y., Bayraklılar M. S.",
+        "year": "2024",
+        "title": "Machine Learning Methods for Energy Production Forecasting: A Review",
+        "venue": "9th International Conference on Natural and Engineering Sciences"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2023",
+        "title": "Comparative Analysis of CNN Models for Plant Disease Classification Using Augmented PlantVillage Dataset",
+        "venue": "3rd International Conference on Scientific and Academic Research (ICSAR 2023), 1(7), 1075-1079",
+        "doi": "10.59287/as-proceedings.845"
+      },
+      {
+        "authors": "Doğan Y.",
+        "year": "2023",
+        "title": "The Impact of Model Capacity on Performance via Weight Pruning: A Study Using the Food-11 Dataset",
+        "venue": "2nd International Conference on Recent Academic Studies (ICRAS 2023), 1(1), 244-248",
+        "doi": "10.59287/as-proceedings.66"
+      },
+      {
+        "authors": "Ataş M., Doğan Y., Özdemir C.",
+        "year": "2022",
+        "title": "Processing İle Yeni Bir Otonom Araç Simülasyon Yazılımı Geliştirilmesi",
+        "venue": "III. International Siirt Scientific Research Congress, 540-550"
+      },
+      {
+        "authors": "Özdemir C., Doğan Y., Ataş M.",
+        "year": "2022",
+        "title": "CNN Mimarisi ile MR Görüntülerinden Beyin Tümörlerinin Sınıflandırılması",
+        "venue": "III. International Siirt Scientific Research Congress, 529-539"
+      },
+      {
+        "authors": "Kılıç Ş., Doğan Y., Kuncan F.",
+        "year": "2017",
+        "title": "Sketch Recognition Algorithms for Spiders Diagrams",
+        "venue": "International Conference on Multidisciplinary, Engineering, Science, Education and Technology (IMESET'17), 322-328"
+      },
+      {
+        "authors": "Kılıç Ş., Kaya Y., Doğan Y.",
+        "year": "2017",
+        "title": "A New LBP Method for Using Color Images in Butterfly Classification",
+        "venue": "IMESET'17, 598-604"
+      },
+      {
+        "authors": "Ataş M., Çakar F., Ataş İ., Dilbilir Y., Doğan Y.",
+        "year": "2017",
+        "title": "Yeni bir Java Tabanlı ve Açık Kaynak Kodlu Bilgisayar Destekli Üretim Aracı",
+        "venue": "IMESET'17, 254"
+      },
+      {
+        "authors": "Ataş M., Bakan R., Doğan Y.",
+        "year": "2017",
+        "title": "Robust Feature Extraction Method from Leaf Images for Leaf Identification Operation",
+        "venue": "IMESET'17, 251"
+      },
+      {
+        "authors": "Doğan Y., Ataş M.",
+        "year": "2016",
+        "title": "Classification of Siirt and Antep Pistachio nuts based on Computer Vision",
+        "venue": "International Artificial Intelligence and Data Processing Symposium (IDAP'16), 446-450"
+      },
+      {
+        "authors": "Ataş M., Doğan Y.",
+        "year": "2016",
+        "title": "Detection of Aflatoxin Signature with Hyperspectral Imaging",
+        "venue": "International Artificial Intelligence and Data Processing Symposium (IDAP'16), 441-445"
+      },
+      {
+        "authors": "Ataş M., Doğan Y.",
+        "year": "2015",
+        "title": "Classification of Closed and Open Shell Pistachio Nuts by Machine Vision",
+        "venue": "International Conference on Advanced Technology & Sciences (ICAT'15), 280-284"
+      }
+    ],
+    "conferences_natl": [
+      {
+        "authors": "Doğan Y., Yalım Keleş H.",
+        "year": "2019",
+        "title": "Stability and Diversity in Generative Adversarial Networks",
+        "venue": "27th Signal Processing and Communications Applications Conference (SIU)",
+        "doi": "10.1109/SIU.2019.8806356"
+      },
+      {
+        "authors": "Doğan Y., Ataş M.",
+        "year": "2015",
+        "title": "Prediction of adaptive exposure time in hyperspectral bands for industrial cameras",
+        "venue": "23rd Signal Processing and Communications Applications Conference (SIU)",
+        "doi": "10.1109/SIU.2015.7129910"
+      },
+      {
+        "authors": "Ataş M., Doğan Y.",
+        "year": "2015",
+        "title": "Adaptive High Dynamic Range",
+        "venue": "23rd Signal Processing and Communications Applications Conference (SIU)",
+        "doi": "10.1109/SIU.2015.7129846"
+      },
+      {
+        "authors": "Ataş M., Doğan Y., Ataş İ.",
+        "year": "2014",
+        "title": "Chess playing robotic arm",
+        "venue": "22nd Signal Processing and Communications Applications Conference (SIU)",
+        "doi": "10.1109/SIU.2014.6830443"
+      },
+      {
+        "authors": "Doğan Y., Ataş M., Özdemir C.",
+        "year": "2014",
+        "title": "A new approach for plotting raster based image files",
+        "venue": "22nd Signal Processing and Communications Applications Conference (SIU), 1027-1030",
+        "doi": "10.1109/SIU.2014.6830407"
+      }
+    ],
+    "book_chapters": [
+      {
+        "authors": "Özdemir C., Doğan Y.",
+        "year": "2022",
+        "title": "Klinik Karar Destek Sistemleri",
+        "venue": "Bilgisayar Bilimlerinde Güncel Konular ve Yeni Nesil Teknolojiler, Akademisyen Kitabevi. ISBN: 978-625-6965-76-8"
+      },
+      {
+        "authors": "Doğan Y., Özdemir C.",
+        "year": "2022",
+        "title": "Görüntü İşleme Tabanlı Üretken Çekişmeli Ağ Modelleri",
+        "venue": "Bilgisayar Bilimlerinde Güncel Konular ve Yeni Nesil Teknolojiler, Akademisyen Kitabevi. ISBN: 978-625-6965-76-8"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Üretken Çekişmeli Ağlarda Gizli Unsur Kodlayıcı ile Çıktı İmgesi Arasındaki İlişkinin Hesaplamalı Modellenmesi",
+      "role": {
+        "tr": "Araştırmacı",
+        "en": "Researcher"
+      },
+      "funder": "YÖK / BAP",
+      "years": "2018 – 2020"
+    },
+    {
+      "title": "Bilgisayarlı Görü Tekniği Kullanılarak Siirt Fıstığında Aflatoksin Tespiti Üzerine Bir Araştırma",
+      "role": {
+        "tr": "Araştırmacı",
+        "en": "Researcher"
+      },
+      "funder": "YÖK / BAP",
+      "years": "2014 – 2016"
+    },
+    {
+      "title": "Makine Öğrenmesi Yöntemleriyle Marka ve Tasarım Görsellerinin Yüksek Doğrulukla Sınıflandırılması ve Benzerlik Belirlenmesi",
+      "role": {
+        "tr": "Danışman",
+        "en": "Advisor"
+      },
+      "funder": "TÜBİTAK",
+      "years": "2020 – 2021"
+    },
+    {
+      "title": "Ağ Destekli Yetenek-Yerleşim Belirleme Algoritması Geliştirme Projesi (ADY-YBA)",
+      "role": {
+        "tr": "Araştırmacı",
+        "en": "Researcher"
+      },
+      "funder": {
+        "tr": "Özel Kuruluşlar",
+        "en": "Private Sector"
+      },
+      "years": "2020 – 2021"
+    },
+    {
+      "title": "Balıkçılık Ekosisteminin Analizi ve Derin Öğrenme Yaklaşımı ile Tahmin Sistemi",
+      "role": {
+        "tr": "Danışman",
+        "en": "Advisor"
+      },
+      "funder": {
+        "tr": "Özel Kuruluşlar",
+        "en": "Private Sector"
+      },
+      "years": "2019 – 2021"
+    },
+    {
+      "title": "Acil Servislerde X-ray Görüntülerinin Yapay Zekâ Destekli Kontrol Listesi Temelli Ön Değerlendirilmesi",
+      "role": {
+        "tr": "Araştırmacı",
+        "en": "Researcher"
+      },
+      "funder": "TÜSEB",
+      "years": "2026 – "
+    },
+    {
+      "title": "Siirt Fıstığının Bilgisayarlı Görü Sistemi Kullanılarak Otomatik Olarak Sınıflandırılması",
+      "role": {
+        "tr": "Bursiyer",
+        "en": "Scholar"
+      },
+      "funder": "TÜBİTAK 1005",
+      "years": "2014 – 2015"
+    },
+    {
+      "title": "Bilgisayar Destekli Fıstık Sınıflandırma Sistemi",
+      "role": {
+        "tr": "Yardımcı Personel",
+        "en": "Support Staff"
+      },
+      "funder": "TÜBİTAK 1512",
+      "years": "2016 – 2017"
+    },
+    {
+      "title": "Yapay Zekâ Tabanlı Çok Bölgeli Kemik Yaşı ve Cinsiyet Belirleme Karar Destek Sistemi",
+      "role": {
+        "tr": "Araştırmacı",
+        "en": "Researcher"
+      },
+      "funder": "TÜBİTAK 1512",
+      "years": "2026 – "
+    },
+    {
+      "title": "2211-C Öncelikli Alanlara Yönelik Yurt İçi Doktora Burs Programı 2018/3",
+      "role": {
+        "tr": "Bursiyer",
+        "en": "Scholar"
+      },
+      "funder": "TÜBİTAK",
+      "years": "2018 – 2021"
+    }
+  ],
+  "supervised_theses": [
+    {
+      "student": "Ayaz Sema",
+      "year": "2026",
+      "title": "Tel Kanatlı Isı Değiştiricilerde Isı Transfer Karakteristiğinin Makine Öğrenmesi Yöntemleriyle Belirlenmesi",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Tekin Hilal",
+      "year": "2026",
+      "title": "Bilgisayarlı Tomografi Görüntülerinde Böbrek Patolojilerinin Segmentasyonu ve Sınıflandırılması için Derin Öğrenme Tabanlı Bir Yöntem Geliştirilmesi",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Saylık Deniz İkbal",
+      "year": "2026",
+      "title": "Mamografi Görüntülerinde Derin Öğrenme ile Meme Kanseri Tespiti",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Aşar Tolga",
+      "year": "2025",
+      "title": "Mikroskobik Kan Yayma Görüntülerinde Orak Hücre Tespiti için Hibrit Görüntü İyileştirme ve Açıklanabilir Derin Öğrenme Yaklaşımı",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Yaldız Erkan",
+      "year": "2025",
+      "title": "Rahim Ağzı Kanseri Görüntülerinin Transfer Öğrenme Modelleri ile Sınıflandırılması ve Parametre Azaltma Teknikleri ile Modelin Verimli Hale Getirilmesi",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Öter Esma",
+      "year": "2025",
+      "title": "Alzheimer teşhisinde veri dengeleme yöntemlerinin performans analizi ve değerlendirilmesi",
+      "status": {
+        "tr": "Tamamlandı",
+        "en": "Completed"
+      }
+    },
+    {
+      "student": "Kaya Şeyda",
+      "year": "2024",
+      "title": "Rüzgâr Türbinlerinde Yüzey Hasarlarının Derin Öğrenme Modelleri Kullanılarak Tespiti",
+      "status": {
+        "tr": "Devam ediyor",
+        "en": "Ongoing"
+      }
+    },
+    {
+      "student": "Ataş Muhammed Said",
+      "year": "2024",
+      "title": "Otonom araçlar için derin öğrenme tabanlı şerit tespit modellerinin performans karşılaştırması",
+      "status": {
+        "tr": "Tamamlandı",
+        "en": "Completed"
+      }
+    }
+  ],
+  "courses": {
+    "undergraduate": [
+      "Algoritma Analizi",
+      "Makine Öğrenmesi",
+      "Yapay Zeka",
+      "Veri Yapıları",
+      "Bitirme Tezi",
+      "Bilgisayar Programlama",
+      "Bilgisayar Mimarisi"
+    ],
+    "graduate": [
+      "İleri Derin Öğrenme Uygulamaları",
+      "Makine Öğrenmesi",
+      "Uzmanlık Alan Dersi",
+      "Yüksek Lisans Tez Çalışması",
+      "Yüksek Lisans Semineri",
+      "Yüksek Lisans Tez Hazırlık"
+    ]
+  }
+}

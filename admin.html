@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yönetim Paneli — Yahya Doğan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#12203a;--paper:#f7f5f0;--card:#fff;--amber:#c8791f;--line:#e2ddd2;--muted:#6b7385;--danger:#c0392b;--ok:#1f7a4d}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  a{color:var(--amber)}
+
+  /* Login gate */
+  #gate{position:fixed;inset:0;background:var(--paper);display:flex;align-items:center;justify-content:center;z-index:100}
+  .login-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:40px;width:360px;max-width:90vw;text-align:center;box-shadow:0 20px 50px -20px rgba(18,32,58,.3)}
+  .login-card h1{font-family:'Fraunces',serif;font-size:1.5rem;margin-bottom:6px}
+  .login-card p{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+  .login-card input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:1rem;font-family:inherit;margin-bottom:14px}
+  .login-card input:focus{outline:2px solid var(--amber)}
+  .err{color:var(--danger);font-size:.85rem;margin-top:10px;min-height:20px}
+
+  header.top{background:var(--ink);color:#fff;padding:16px 0;position:sticky;top:0;z-index:20}
+  .top-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+  .top h1{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600}
+  .top .actions{display:flex;gap:10px}
+
+  button{font-family:inherit;cursor:pointer;border:0;border-radius:9px;font-weight:600;font-size:.88rem;padding:10px 16px;transition:all .15s}
+  .btn-primary{background:var(--amber);color:#fff}
+  .btn-primary:hover{filter:brightness(1.08)}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3)}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-sm{padding:6px 12px;font-size:.8rem}
+  .btn-add{background:var(--ink);color:#fff}
+  .btn-del{background:transparent;color:var(--danger);border:1px solid var(--line)}
+  .btn-del:hover{background:#fdeceb;border-color:var(--danger)}
+  .btn-mv{background:var(--paper);color:var(--muted);border:1px solid var(--line);padding:6px 10px}
+  button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+  .banner{background:#fff6e8;border:1px solid var(--amber);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:.88rem;color:#7a4d10}
+  .banner strong{color:var(--ink)}
+  .banner code{font-family:'JetBrains Mono',monospace;font-size:.82rem;background:#fff;padding:1px 5px;border-radius:4px;border:1px solid var(--line)}
+
+  .tabs{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0}
+  .tab{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.85rem;font-weight:500;color:var(--ink)}
+  .tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+  .panel{display:none}
+  .panel.active{display:block}
+
+  .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+  .item-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+  .item-head .idx{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--amber);font-weight:600}
+  .item-head .btns{display:flex;gap:6px}
+  .field{margin-bottom:12px}
+  .field label{display:block;font-size:.76rem;font-weight:600;color:var(--muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
+  .field input,.field textarea,.field select{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font-size:.92rem;font-family:inherit;background:#fff}
+  .field textarea{min-height:60px;resize:vertical}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--amber);border-color:transparent}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .bi{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .bi .lg{font-size:.68rem;color:var(--amber);font-weight:700;margin-bottom:3px;display:block}
+
+  .add-bar{margin:14px 0 30px}
+  .empty{color:var(--muted);text-align:center;padding:30px;font-style:italic}
+  .save-hint{font-size:.8rem;color:var(--muted);margin-top:4px}
+  @media(max-width:640px){.row2,.row3,.bi{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="login-card">
+    <h1>Yönetim Paneli</h1>
+    <p>Devam etmek için parolayı girin</p>
+    <input type="password" id="pw" placeholder="Parola" autocomplete="current-password">
+    <button class="btn-primary" style="width:100%" onclick="checkPw()">Giriş</button>
+    <div class="err" id="pwErr"></div>
+  </div>
+</div>
+
+<div id="admin" style="display:none">
+  <header class="top">
+    <div class="top-inner">
+      <h1>CV Yönetim Paneli</h1>
+      <div class="actions">
+        <button class="btn-ghost" onclick="location.href='index.html'">Siteyi Gör</button>
+        <button class="btn-primary" onclick="downloadJson()">data.json İndir</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="banner">
+      <strong>Nasıl kaydedilir?</strong> Değişiklik yaptıktan sonra <strong>“data.json İndir”</strong>e basın.
+      İnen dosyayı proje klasörünüzdeki <code>data.json</code> ile değiştirin, ardından VS Code'dan
+      <code>git add . &amp;&amp; git commit -m "cv güncelleme" &amp;&amp; git push</code> yapın.
+      Birkaç dakika içinde site güncellenir. Değişiklikler bu tarayıcıda otomatik saklanır; sekmeyi kapatsanız kaybolmaz.
+    </div>
+
+    <div class="tabs" id="tabs"></div>
+    <div id="panels"></div>
+  </div>
+</div>
+
+<script>
+/* ============ PAROLA ============ */
+/* Parolayı buradan değiştirebilirsiniz. Not: Statik sitede istemci tarafı
+   parola gerçek güvenlik sağlamaz, yalnızca gündelik gözlere karşı korumadır. */
+const PASSWORD="siirt2024";
+
+let DATA=null;
+
+function checkPw(){
+  const v=document.getElementById('pw').value;
+  if(v===PASSWORD){
+    sessionStorage.setItem('cv_auth','1');
+    openAdmin();
+  }else{
+    document.getElementById('pwErr').textContent='Parola hatalı.';
+  }
+}
+document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')checkPw();});
+
+function openAdmin(){
+  document.getElementById('gate').style.display='none';
+  document.getElementById('admin').style.display='block';
+  loadData();
+}
+
+async function loadData(){
+  const stored=localStorage.getItem('cv_data_draft');
+  if(stored){
+    try{DATA=JSON.parse(stored);}catch(e){DATA=null;}
+  }
+  if(!DATA){
+    const r=await fetch('data.json?v='+Date.now());
+    DATA=await r.json();
+  }
+  buildTabs();
+}
+function persist(){ localStorage.setItem('cv_data_draft',JSON.stringify(DATA)); }
+
+/* ============ SEKME TANIMLARI ============ */
+const TABS=[
+  {id:'profile',label:'Profil'},
+  {id:'education',label:'Eğitim'},
+  {id:'positions',label:'Akademik Görevler'},
+  {id:'administrative',label:'İdari Görevler'},
+  {id:'journals_intl',label:'Ulus.arası Dergi'},
+  {id:'journals_natl',label:'Ulusal Dergi'},
+  {id:'conferences_intl',label:'Ulus.arası Bildiri'},
+  {id:'conferences_natl',label:'Ulusal Bildiri'},
+  {id:'book_chapters',label:'Kitap Bölümü'},
+  {id:'projects',label:'Projeler'},
+  {id:'supervised_theses',label:'Tezler'},
+  {id:'awards',label:'Ödüller'},
+  {id:'courses',label:'Dersler'}
+];
+let activeTab='profile';
+
+function buildTabs(){
+  document.getElementById('tabs').innerHTML=TABS.map(t=>
+    `<button class="tab ${t.id===activeTab?'active':''}" onclick="switchTab('${t.id}')">${t.label}</button>`).join('');
+  renderPanel();
+}
+function switchTab(id){activeTab=id;buildTabs();}
+
+/* pub kategorileri data.publications altında */
+const PUB_KEYS=['journals_intl','journals_natl','conferences_intl','conferences_natl','book_chapters'];
+function getList(id){
+  if(PUB_KEYS.includes(id)) return DATA.publications[id];
+  return DATA[id];
+}
+
+function renderPanel(){
+  const el=document.getElementById('panels');
+  if(activeTab==='profile'){ el.innerHTML=profileForm(); return; }
+  if(activeTab==='courses'){ el.innerHTML=coursesForm(); return; }
+  const list=getList(activeTab);
+  let h='';
+  list.forEach((item,i)=>{ h+=itemCard(activeTab,item,i,list.length); });
+  if(!list.length) h+=`<div class="empty">Henüz kayıt yok.</div>`;
+  h+=`<div class="add-bar"><button class="btn-add" onclick="addItem('${activeTab}')">+ Yeni Ekle</button></div>`;
+  el.innerHTML=h;
+}
+
+/* ---- alan yardımcıları ---- */
+function inp(path,label,val,type){
+  return `<div class="field"><label>${label}</label><input type="${type||'text'}" value="${escAttr(val||'')}" oninput="upd('${path}',this.value)"></div>`;
+}
+function ta(path,label,val){
+  return `<div class="field"><label>${label}</label><textarea oninput="upd('${path}',this.value)">${escHtml(val||'')}</textarea></div>`;
+}
+function biField(path,label,obj){
+  obj=obj||{tr:'',en:''};
+  return `<div class="field"><label>${label}</label><div class="bi">
+    <div><span class="lg">TR</span><input type="text" value="${escAttr(obj.tr||'')}" oninput="upd('${path}.tr',this.value)"></div>
+    <div><span class="lg">EN</span><input type="text" value="${escAttr(obj.en||'')}" oninput="upd('${path}.en',this.value)"></div>
+  </div></div>`;
+}
+
+function itemCard(tab,item,i,n){
+  let body='';
+  const b=`${tab}.${i}`;
+  if(tab==='education'){
+    body=biField(b+'.degree','Derece',item.degree)
+      +inp(b+'.institution','Kurum',item.institution)
+      +inp(b+'.years','Yıllar',item.years)
+      +`<div class="field"><label>Tez (TR)</label><textarea oninput="upd('${b}.thesis.tr',this.value)">${escHtml(item.thesis?item.thesis.tr:'')}</textarea></div>`
+      +`<div class="field"><label>Tez (EN)</label><textarea oninput="upd('${b}.thesis.en',this.value)">${escHtml(item.thesis?item.thesis.en:'')}</textarea></div>`;
+  }else if(tab==='positions'){
+    body=biField(b+'.role','Görev',item.role)+inp(b+'.institution','Kurum',item.institution)+inp(b+'.years','Yıllar',item.years);
+  }else if(tab==='administrative'){
+    body=biField(b+'.role','Görev',item.role)+inp(b+'.institution','Kurum',item.institution)+inp(b+'.years','Yıllar',item.years);
+  }else if(PUB_KEYS.includes(tab)){
+    body=inp(b+'.title','Başlık',item.title)
+      +`<div class="row2">${inp(b+'.authors','Yazarlar',item.authors)}${inp(b+'.year','Yıl',item.year)}</div>`
+      +inp(b+'.venue','Dergi / Konferans',item.venue)
+      +inp(b+'.doi','DOI (opsiyonel)',item.doi);
+  }else if(tab==='projects'){
+    body=inp(b+'.title','Proje Adı',item.title)
+      +biField(b+'.role','Görev',item.role)
+      +biField(b+'.funder','Destekleyen',typeof item.funder==='object'?item.funder:{tr:item.funder,en:item.funder})
+      +inp(b+'.years','Yıllar',item.years);
+  }else if(tab==='supervised_theses'){
+    body=inp(b+'.title','Tez Başlığı',item.title)
+      +`<div class="row2">${inp(b+'.student','Öğrenci',item.student)}${inp(b+'.year','Yıl',item.year)}</div>`
+      +biField(b+'.status','Durum',item.status);
+  }else if(tab==='awards'){
+    body=biField(b+'.title','Ödül',item.title)
+      +`<div class="row2">${inp(b+'.org','Kurum',item.org)}${inp(b+'.year','Yıl',item.year)}</div>`;
+  }
+  return `<div class="item"><div class="item-head">
+      <span class="idx">#${i+1}</span>
+      <div class="btns">
+        ${i>0?`<button class="btn-mv btn-sm" onclick="move('${tab}',${i},-1)">↑</button>`:''}
+        ${i<n-1?`<button class="btn-mv btn-sm" onclick="move('${tab}',${i},1)">↓</button>`:''}
+        <button class="btn-del btn-sm" onclick="delItem('${tab}',${i})">Sil</button>
+      </div>
+    </div>${body}</div>`;
+}
+
+function profileForm(){
+  const p=DATA.profile;
+  return `<div class="item">
+    ${inp('profile.name','Ad Soyad',p.name)}
+    ${biField('profile.title','Unvan',p.title)}
+    ${biField('profile.department','Bölüm/Kurum',p.department)}
+    <div class="row2">${inp('profile.email','E-posta',p.email)}${inp('profile.phone','Telefon',p.phone)}</div>
+    ${inp('profile.photo','Fotoğraf yolu',p.photo)}
+    <div class="field"><label>Kısa Biyografi (TR)</label><textarea oninput="upd('profile.bio.tr',this.value)">${escHtml(p.bio.tr)}</textarea></div>
+    <div class="field"><label>Kısa Biyografi (EN)</label><textarea oninput="upd('profile.bio.en',this.value)">${escHtml(p.bio.en)}</textarea></div>
+    <h3 style="font-size:.9rem;margin:16px 0 10px;color:var(--muted)">Bağlantılar (opsiyonel)</h3>
+    <div class="row2">${inp('profile.links.scholar','Google Scholar URL',p.links.scholar)}${inp('profile.links.orcid','ORCID URL',p.links.orcid)}</div>
+    <div class="row2">${inp('profile.links.researchgate','ResearchGate URL',p.links.researchgate)}${inp('profile.links.linkedin','LinkedIn URL',p.links.linkedin)}</div>
+    ${inp('profile.links.github','GitHub URL',p.links.github)}
+  </div>`;
+}
+
+function coursesForm(){
+  const c=DATA.courses;
+  return `<div class="item">
+    <div class="field"><label>Lisans Dersleri (her satıra bir ders)</label>
+      <textarea style="min-height:140px" oninput="updCourses('undergraduate',this.value)">${escHtml(c.undergraduate.join('\n'))}</textarea></div>
+    <div class="field"><label>Yüksek Lisans Dersleri (her satıra bir ders)</label>
+      <textarea style="min-height:140px" oninput="updCourses('graduate',this.value)">${escHtml(c.graduate.join('\n'))}</textarea></div>
+  </div>`;
+}
+function updCourses(key,val){
+  DATA.courses[key]=val.split('\n').map(s=>s.trim()).filter(Boolean);
+  persist();
+}
+
+/* ---- veri güncelleme (path ile) ---- */
+function upd(path,val){
+  const parts=path.split('.');
+  let obj=DATA;
+  for(let i=0;i<parts.length-1;i++){
+    let k=parts[i];
+    if(PUB_KEYS.includes(k)&&obj===DATA){ obj=DATA.publications[k]; continue; }
+    obj=obj[isNaN(k)?k:parseInt(k)];
+  }
+  const last=parts[parts.length-1];
+  obj[isNaN(last)?last:parseInt(last)]=val;
+  persist();
+}
+
+function blank(tab){
+  const bi={tr:'',en:''};
+  if(tab==='education') return {degree:{...bi},institution:'',years:'',thesis:{...bi}};
+  if(tab==='positions'||tab==='administrative') return {role:{...bi},institution:'',years:''};
+  if(PUB_KEYS.includes(tab)) return {authors:'',year:'',title:'',venue:'',doi:''};
+  if(tab==='projects') return {title:'',role:{...bi},funder:{...bi},years:''};
+  if(tab==='supervised_theses') return {student:'',year:'',title:'',status:{tr:'Devam ediyor',en:'Ongoing'}};
+  if(tab==='awards') return {title:{...bi},org:'',year:''};
+  return {};
+}
+function addItem(tab){ getList(tab).unshift(blank(tab)); persist(); renderPanel(); }
+function delItem(tab,i){ if(confirm('Bu kaydı silmek istediğinize emin misiniz?')){ getList(tab).splice(i,1); persist(); renderPanel(); } }
+function move(tab,i,dir){ const l=getList(tab); const j=i+dir; if(j<0||j>=l.length)return; [l[i],l[j]]=[l[j],l[i]]; persist(); renderPanel(); }
+
+function downloadJson(){
+  const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;a.download='data.json';a.click();
+  URL.revokeObjectURL(url);
+}
+
+function escHtml(s){return String(s==null?'':s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function escAttr(s){return String(s==null?'':s).replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+
+/* oturum hatırla */
+if(sessionStorage.getItem('cv_auth')==='1'){ openAdmin(); }
+</script>
+</body>
+</html>
