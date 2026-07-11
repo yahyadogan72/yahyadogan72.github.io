@@ -13,7 +13,7 @@
     "phone": "(0484) 223-1224 / 3014",
     "photo": "assets/profile.jpg",
     "bio": {
-      "tr": "Siirt Üniversitesi Bilgisayar Mühendisliği Bölümü'nde doçent olarak görev yapıyorum. Derin öğrenme, bilgisayarlı görü, tıbbi görüntü analizi, üretken çekişmeli ağlar (GAN) ve makine öğrenmesi alanlarında çalışıyorum. Ankara Üniversitesi Bilgisayarla Görü ve Makine Öğrenimi Laboratuvarı üyesi ve Siirt Üniversitesi Yapay Zekâ Laboratuvarı'nın kurucu üyelerindenim. ASELSAN ve özel sektör firmalarına yapay zekâ danışmanlığı vermekteyim.",
+      "tr": "Siirt Üniversitesi Bilgisayar Mühendisliği Bölümü'nde doçent olarak görev yapmaktadır. Derin öğrenme, bilgisayarlı görü, tıbbi görüntü analizi, üretken çekişmeli ağlar (GAN) ve makine öğrenmesi alanlarında çalışmaktadır. Ankara Üniversitesi Bilgisayarla Görü ve Makine Öğrenimi Laboratuvarı üyesi ve Siirt Üniversitesi Yapay Zekâ Laboratuvarı'nın kurucu üyelerindendir. ASELSAN ve özel sektör firmalarına yapay zekâ danışmanlığı vermektedir.",
       "en": "I am an Associate Professor in the Department of Computer Engineering at Siirt University. My research focuses on deep learning, computer vision, medical image analysis, generative adversarial networks (GANs), and machine learning. I am a member of the Computer Vision and Machine Learning Laboratory at Ankara University and one of the founders of the Artificial Intelligence Laboratory at Siirt University. I also provide artificial intelligence consultancy to ASELSAN and companies in the private sector."
     },
     "links": {
@@ -198,13 +198,6 @@
         "title": "LbpRIPooling: A novel rotation-invariant pooling method for CNNs",
         "venue": "Knowledge-Based Systems, 328",
         "doi": "10.1016/j.knosys.2025.114204"
-      },
-      {
-        "authors": "Alasulu A., Doğan Y., Özdemir C.",
-        "year": "2025",
-        "title": "Tıbbi BT Görüntülerinde Derin Öğrenme Tabanlı Sınıflandırma Modellerinin Etkinlik Değerlendirmesi: EfficientNet-v2_L'nin Üstün Performansı",
-        "venue": "Uluslararası İleri Doğa Bilimleri ve Mühendislik Araştırmaları Dergisi, 9(9), 94-100",
-        "doi": ""
       },
       {
         "authors": "Doğan Y.",
